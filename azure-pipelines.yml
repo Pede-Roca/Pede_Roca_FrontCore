@@ -23,6 +23,7 @@ steps:
 
 - script: |
     firebase deploy --token $(FIREBASE_TOKEN)
+    echo "Firebase token: $(FIREBASE_TOKEN)"
   displayName: 'Inclusao do Token do Firebase'
   env:
     FIREBASE_TOKEN: $(FIREBASE_TOKEN)
