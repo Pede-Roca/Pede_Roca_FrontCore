@@ -9,6 +9,9 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+variables:
+- group: variables-frontcore
+
 steps:
 - task: NodeTool@0
   inputs:
@@ -16,6 +19,7 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
+    echo "variables test: $(variables-frontcore)"
     npm install -g firebase-tools
     npm install
     npm run build
