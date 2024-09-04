@@ -1,0 +1,168 @@
+
+.BgOffCanvas {
+    background: linear-gradient(320deg, rgba(217, 217, 217, 0.40) 0%, rgba(217, 217, 217, 0.50) 100%);
+    backdrop-filter: blur(20px);
+}
+
+.titulo {
+    color: #f2f2f2;
+    font-weight: bold;
+    text-align: start;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin: 2px auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bgTitulo{
+    background-color: #7C8C03;
+    width: 100%;
+    border-radius: 2px;
+}
+
+#Button{
+    background-color: #7C8C03;
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 0px 0px 3px 4px black;
+    box-shadow: 0xp 0xp 2px 2px;
+    padding: 8px 18px;
+}
+
+#Button:hover{
+    background-color: #f2f2f2;
+    color: #7C8C03;
+    border: 1px solid #7C8C03;
+    font-weight: bold;
+    padding: 7px 18px;
+
+}
+
+#ImgNavBTN{
+    color: #f2f2f2;
+}
+
+#ImgNavBTN:hover{
+    font-weight: bold;
+}
+
+
+.NavSideBar {
+    position: absolute;
+    top: 50px;
+    left: -45px;
+    width: 50px;
+}
+
+@media screen and (max-width: 767px) {
+    .NavSideBar {
+        display: none;
+    }
+    .hideMobile {
+        display: none;
+    }
+
+    #Button{
+        position: fixed;
+        bottom: 0;
+        background-color: #7C8C03;
+        color: #f2f2f2;
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+        font-size: 1.5rem;
+    }
+
+    .hideNavMobile{
+        background-color: white;
+        display: block;
+        text-align: center;
+        column-count: 4;
+        column-gap: 20px;
+        background-color: white;
+        border-radius: 10px 10px 0px 0px;
+        margin: 0px;
+        border-top: 1px solid #7C8C03;
+        box-shadow: 0px -5px 18px 0px rgba(0,0,0,0.56);
+    }
+
+    .btnNavCart, .btnNavUser, .btnNavInfo, .btnReceitas {
+        color: white;
+        background-color: #7C8C03;
+        border: none;
+        margin-top: 10px;
+        min-width: 50px;
+        border-radius: 10px;
+        font-size: 2rem;
+        box-shadow: 0px 0px 1px 2px 3px black;
+    }
+
+    .btnNavCart:hover, .btnNavUser:hover, .btnNavInfo:hover, .btnReceitas:hover {
+        border: none;
+        background-color: #96a80e;
+    }
+
+    .btnNavCardActive, .btnNavUserActive, .btnNavInfoActive, .btnReceitasActive{
+        color: #7C8C03;
+        background-color: white;
+        border: 1px solid #7C8C03;
+        margin-top: 10px;
+        min-width: 50px;
+        border-radius: 10px;
+        font-size: 2rem;
+        box-shadow: 0px 0px 1px 2px 3px black;
+    }
+
+    .footer{
+        text-align: center;
+        padding: 2px;
+    }
+
+    .separador{
+        display: inline-block;
+    }
+
+    .nomeNav{
+        color: #7C8C03;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hideNavMobile{
+        display: none;
+    }
+
+    .separador{
+        display: none;
+    }
+    .btnNavCart, .btnNavUser, .btnNavInfo, .btnReceitas {
+        color: #7C8C03;
+        background-color: white;
+        border: none;
+        margin: 5px;
+        border-radius: 10px 0px 0px 10px;
+        font-size: 2rem;
+    }
+
+    .btnNavCart:hover, .btnNavUser:hover, .btnNavInfo:hover, .btnReceitas:hover {
+        color: #f2f2f2;
+        border: none;
+        background-color: #7C8C03;
+    }
+
+    .btnNavCardActive, .btnNavUserActive, .btnNavInfoActive, .btnReceitasActive {
+        color: white;
+        background-color: #7C8C03;
+        border: none;
+        margin: 5px;
+        border-radius: 10px 0px 0px 10px;
+        font-size: 2rem;
+    }
+
+    .btnNavCart {
+    position: relative;
+    top: 0;
+    left: 0;
+    }
+}

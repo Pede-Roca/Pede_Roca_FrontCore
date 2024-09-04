@@ -1,0 +1,58 @@
+.textoIntro {
+    text-indent: 10px;
+    text-align: justify;
+    margin: 2px 5px;
+}
+
+.respostaGPT {
+    min-height: 200px;
+    min-width: 100%;
+    border: 1px solid #7C8C03;
+    visibility: visible;
+    margin: 0px 2px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.labelPrompt {
+    width: 100%;
+    color: #7C8C03;
+    font-weight: bold;
+}
+
+.ImpPrompt{
+    min-width: 70%;
+    border: 1px solid #7C8C03;
+    border-radius: 5px 0px 0px 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.btnPrompt{
+    background-color: #7C8C03;
+    color: #f2f2f2;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #7C8C03;
+    width: 30%;
+    padding: 5px;
+}
+
+.btnClean{
+    background-color: #7C8C03;
+    color: #f2f2f2;
+    border-radius: 0px 0px 10px 10px;
+    border: 1px solid #7C8C03;
+    width: 100%;
+    margin: 0px 2px;
+}
+
+.ProgressBar{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:conic-gradient(#0000 10%,#7C8C03);
+    -webkit-mask:radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+    animation:s3 1s infinite linear;
+    margin: 0 auto;
+}
+
+@keyframes s3 {to{transform: rotate(1turn)}}
