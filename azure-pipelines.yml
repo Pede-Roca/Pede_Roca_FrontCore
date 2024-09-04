@@ -25,6 +25,5 @@ steps:
   displayName: 'npm install and build'
 
 - script: |
-    firebase deploy --token $(FIREBASE_TOKEN)
-    echo "Firebase token: $(token-firebase)"
+    firebase deploy --token $(token-firebase)
   displayName: 'Inclusao do Token do Firebase'
