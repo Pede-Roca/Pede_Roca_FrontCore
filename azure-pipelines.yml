@@ -19,16 +19,5 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    echo "variables test: $(variables-frontcore)"
-    npm install -g firebase-tools
-    npm install
-    npm run build
-  displayName: 'npm install and build'
-
-- script: |
-    firebase deploy --token $(FIREBASE_TOKEN)
-    echo "Firebase token: $(FIREBASE_TOKEN)"
-  displayName: 'Inclusao do Token do Firebase'
-  env:
-    FIREBASE_TOKEN: $(FIREBASE_TOKEN)
-
+    echo "variables test: $(FIREBASE-TOKEN)"
+    
